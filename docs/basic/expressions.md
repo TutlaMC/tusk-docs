@@ -25,7 +25,7 @@ This is the atom of TuSK. A Factor takes in a `NUMBER`, `STRING`, `BOOL`, `TYPE`
 - A List 
   - Any expression seperated by commas will be made into a list
   - For example: `"bats", "balls", "wickets"` makes a list
-- A function (effects/functions that return variables, you could make your own or read the [effect list](reference/effects))
+- A function (effects/functions that return variables, you could make your own or read the [effect list](/docs/basic/reference/effects))
   
 ## Term
 

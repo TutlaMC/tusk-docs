@@ -1,6 +1,6 @@
 # Setting up TuSK
 
-Assuming you have completed the instructions in the [installation guide](install.md) you may now setup your bot. 
+Assuming you have completed the instructions in the [installation guide](/docs/install) you may now setup your bot. 
 
 ## Customizing TuSK
 
