@@ -1,6 +1,6 @@
 # Effects
 
-Effects are what you want the language to do or effect. To read all the effects, read [this](/docs/basic/reference/effects). Here are some example effects to get started (some may be outdated):
+Effects are what you want the language to do or effect. To read all the effects, read [this](/docs/reference/effects). Here are some example effects to get started (some may be outdated):
 
 ### print
 ```print [expression]```
