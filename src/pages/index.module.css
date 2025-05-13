@@ -1,0 +1,390 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageBackground {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #181a20 60%, #23243a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.heroSection {
+  width: 100%;
+  padding: 7rem 0 3.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  z-index: 2;
+  position: relative;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2.5rem;
+  padding: 0 2rem;
+  background: rgba(24, 26, 32, 0.98);
+  border-radius: 32px;
+  box-shadow: 0 8px 48px 0 rgba(80, 120, 255, 0.18), 0 2px 24px 0 rgba(0,0,0,0.18);
+}
+
+.heroLeft {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2.5rem 0 2.5rem 2.5rem;
+}
+
+.heroPreTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  line-height: 1.1;
+}
+
+.heroMainTitle {
+  font-size: 5.2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  margin-top: 0.1rem;
+  line-height: 1.05;
+}
+
+.gradientText {
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  background: linear-gradient(90deg, #7ed6fc 0%, #b388ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: -2px;
+}
+
+.heroSubtitle {
+  color: #d6e0f0;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+.emphasis {
+  font-weight: 700;
+  color: #b388ff;
+}
+
+.downloadBtn, .downloadBtnLarge {
+  display: inline-block;
+  background: linear-gradient(90deg, #7ed6fc 0%, #b388ff 100%);
+  color: #181a20;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.85rem 2.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 rgba(80, 120, 255, 0.13);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  margin-top: 1.5rem;
+}
+.downloadBtn:hover, .downloadBtnLarge:hover {
+  background: linear-gradient(90deg, #b388ff 0%, #7ed6fc 100%);
+  color: #23243a;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.downloadRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .downloadRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.heroRight {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2.5rem 2.5rem 0;
+}
+
+.heroVideoWrapper {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px 0 rgba(80, 120, 255, 0.13);
+  background: #23243a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroVideo {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.featuresSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.featuresRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.featureCard {
+  background: rgba(30, 32, 40, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  border: 1px solid rgba(80, 120, 255, 0.08);
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  flex: 1 1 0;
+  min-width: 280px;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.featureCard:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px 0 rgba(80, 120, 255, 0.18);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(90deg, #7ed6fc 0%, #b388ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  background: linear-gradient(90deg, #7ed6fc 0%, #b388ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.description {
+  color: #d6e0f0;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.engines {
+  display: block;
+  margin-top: 0.5rem;
+  color: #b388ff;
+  font-weight: 500;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 1100px) {
+  .heroContent {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0 1rem;
+  }
+  .heroLeft, .heroRight {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0 0 0;
+  }
+  .heroMainTitle {
+    font-size: 3.2rem;
+  }
+  .heroVideoWrapper {
+    max-width: 100vw;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    padding: 3rem 0 1.5rem 0;
+    margin-top: 1rem;
+  }
+  .heroMainTitle {
+    font-size: 2.1rem;
+  }
+  .heroPreTitle {
+    font-size: 1.2rem;
+  }
+  .heroLeft, .heroRight {
+    padding: 1rem 0 0 0;
+  }
+  .heroVideoWrapper {
+    max-width: 98vw;
+    min-width: 0;
+    border-radius: 10px;
+  }
+}
+
+.ExampleScriptsSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin: 3rem 0 2rem 0;
+}
+
+.ExampleScriptsContent {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  max-width: 1100px;
+  width: 100%;
+  background: rgba(24, 26, 32, 0.98);
+  border-radius: 24px;
+  box-shadow: 0 4px 32px 0 rgba(80, 120, 255, 0.10);
+  padding: 2.5rem 2rem;
+}
+
+.ExampleScriptsNav {
+  min-width: 220px;
+  margin-right: 1.5rem;
+}
+.ExampleScriptsNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ExampleScriptsNav li {
+  color: #b0b8d0;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.ExampleScriptsNav .active,
+.ExampleScriptsNav li:hover {
+  color: #eaff7b;
+  font-weight: 700;
+}
+
+.ExampleScriptsMain {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ExampleScriptsTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.7rem;
+}
+.ExampleScriptsDesc {
+  color: #b0b8d0;
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+}
+.ExampleScriptsChart {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px 0 rgba(80, 120, 255, 0.10);
+  background: #23243a;
+}
+.ExampleScriptsChart img {
+  width: 100%;
+  display: block;
+}
+
+/* Responsive for ExampleScripts section and homepage features */
+@media (max-width: 900px) {
+  .ExampleScriptsContent {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem;
+    align-items: stretch;
+  }
+  .ExampleScriptsNav {
+    min-width: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .ExampleScriptsChart {
+    max-width: 100vw;
+  }
+  .featuresRow {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .featureCard {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}

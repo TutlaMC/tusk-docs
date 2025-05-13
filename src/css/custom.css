@@ -1,0 +1,269 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* =====================
+   Tusk Theme Variables
+   ===================== */
+:root {
+  --tusk-bg: #181a20;
+  --tusk-bg-dark: #111114;
+  --tusk-card-bg: rgba(30, 32, 40, 0.85);
+  --tusk-card-bg-strong: rgba(24, 26, 32, 0.98);
+  --tusk-gradient: linear-gradient(90deg, #7ed6fc 0%, #b388ff 100%);
+  --tusk-gradient-reverse: linear-gradient(90deg, #b388ff 0%, #7ed6fc 100%);
+  --tusk-primary: #7ed6fc;
+  --tusk-secondary: #b388ff;
+  --tusk-accent: #eaff7b;
+  --tusk-text: #fff;
+  --tusk-text-muted: #b0b8d0;
+  --tusk-link: #7ed6fc;
+  --tusk-link-hover: #b388ff;
+  --tusk-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  --tusk-radius: 20px;
+  --tusk-radius-pill: 999px;
+  --ifm-color-primary: #7ed6fc;
+  --ifm-color-primary-dark: #7ed6fc;
+  --ifm-color-primary-darker: #7ed6fc;
+  --ifm-color-primary-darkest: #7ed6fc;
+  --ifm-color-primary-light: #b388ff;
+  --ifm-color-primary-lighter: #b388ff;
+  --ifm-color-primary-lightest: #b388ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* =====================
+   Utility Classes
+   ===================== */
+.gradient-text {
+  background: var(--tusk-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.tusk-card {
+  background: var(--tusk-card-bg);
+  border-radius: var(--tusk-radius);
+  box-shadow: var(--tusk-shadow);
+  color: var(--tusk-text);
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.tusk-btn {
+  display: inline-block;
+  background: #fff;
+  color: #181a20;
+  border-radius: var(--tusk-radius-pill);
+  padding: 0.4em 1.8em;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 120, 255, 0.10);
+  border: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tusk-btn:hover {
+  background: var(--tusk-gradient);
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(80, 120, 255, 0.18);
+}
+
+.tusk-section {
+  background: var(--tusk-bg);
+  color: var(--tusk-text);
+  border-radius: var(--tusk-radius);
+  box-shadow: var(--tusk-shadow);
+  padding: 2.5rem 2rem;
+}
+
+.tusk-link {
+  color: var(--tusk-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.tusk-link:hover {
+  color: var(--tusk-link-hover);
+}
+
+/* =====================
+   Navbar Styles
+   ===================== */
+.navbar {
+  background: var(--tusk-bg-dark) !important;
+  color: var(--tusk-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  border-bottom: 1px solid rgba(80,120,255,0.04);
+}
+.navbar__brand {
+  margin-right: 2rem;
+  font-size: 1.7rem;
+  font-weight: 900;
+  background: var(--tusk-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: -1px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.navbar__logo {
+  display: none !important;
+}
+
+/* Download button in navbar */
+.navbar__item[href*="github.com/tutlamc/tusk"],
+.navbar__item[href*="github.com/tutlamc/tusk"].navbar__link {
+  background: #fff !important;
+  color: #181a20 !important;
+  border-radius: var(--tusk-radius-pill) !important;
+  padding: 0.4em 1.8em !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  box-shadow: 0 2px 8px 0 rgba(80, 120, 255, 0.10) !important;
+  margin-left: 1.5rem !important;
+  position: relative;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: flex !important;
+  align-items: center;
+  border: none !important;
+}
+.navbar__item[href*="github.com/tutlamc/tusk"]:hover,
+.navbar__item[href*="github.com/tutlamc/tusk"].navbar__link:hover {
+  background: var(--tusk-gradient) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px 0 rgba(80, 120, 255, 0.18) !important;
+}
+
+/* =====================
+   Card & Section Styles
+   ===================== */
+.tusk-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  background: var(--tusk-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.tusk-card-desc {
+  color: var(--tusk-text-muted);
+  font-size: 1.08rem;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* =====================
+   Responsive Utilities
+   ===================== */
+@media (max-width: 900px) {
+  .tusk-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 2rem auto;
+  }
+  .tusk-section {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+/* =====================
+   For readability concerns
+   ===================== */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Center navbar items and style Download button */
+.navbar__items {
+  flex: 1;
+  justify-content: center !important;
+}
+
+/* Remove default logo image */
+.navbar__logo {
+  display: none !important;
+}
+
+/* Navbar background and font to match hero section */
+.navbar {
+  background: #111114 !important;
+  color: #fff;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  border-bottom: 1px solid rgba(80,120,255,0.04);
+}
+
+/* Restore Discord button to normal link style */
+.navbar__item[href*="discord"],
+.navbar__item[href*="discord"].navbar__link {
+  background: none !important;
+  color: #7ed6fc !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  box-shadow: none !important;
+  margin-left: 0 !important;
+  border: none !important;
+}
+
+.navbar__item[href*="discord"]:hover,
+.navbar__item[href*="discord"].navbar__link:hover {
+  background: none !important;
+  color: #b388ff !important;
+}
+
+/* Ensure Download button is visible in mobile navbar */
+.navbar-download-button {
+  display: flex !important;
+  align-items: center;
+}
+
+@media (max-width: 996px) {
+  .navbar-download-button {
+    width: 100%;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+  .navbar-download-button > .navbar__link {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+.button.button--primary, .button--primary {
+  background: linear-gradient(90deg, #7ed6fc 0%, #b388ff 100%);
+  color: #181a20;
+  border: none;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.button.button--primary:hover, .button--primary:hover {
+  background: linear-gradient(90deg, #b388ff 0%, #7ed6fc 100%);
+  color: #fff;
+}
+
+a, .navbar__link {
+  background: none;
+  color: #7ed6fc;
+  transition: color 0.2s;
+}
+a:hover, .navbar__link:hover {
+  color: #b388ff;
+}
