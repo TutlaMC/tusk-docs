@@ -2,6 +2,34 @@
 
 One thing that makes TUSK better than everything else out there is because TUSK is open source and always ready for change and something new. We want more people to contribute to this project so we can become the best Discord bot builder. **You will need some python knowledge beforehand.
 
+## Creating a Package
+What's a package? A Wimp Package is a [Discord.py Cog](https://discordpy.readthedocs.io/en/stable/ext/commands/cogs.html). It is very simple to setup just perform the steps provided below
+
+### 1. Create a python file in `/packages`
+`/packages` is on the root directory of your Tusk install. If it doesn't show up try reinstalling the latest version. Older versions can be faulty with some packages. 
+
+*Optional:* You can create a description by creating a comment on the first line fo your package
+
+### 2. Writing the package
+The package can be written in however you like, but keep in mind:
+
+- It should be a `discord.Cog` from discord.py (group commands and listeners are also supported, theres no limitations)
+
+### 3. Registering the package
+
+Finally to get your package to load with Tusk and JSK you need to:
+```python
+async def setup(bot):
+    await bot.add_cog(YourCogName(bot))
+```
+-# Replace `YourCogName` with your actual cog name
+
+**Note:** You can also add `await bot.tree.sync()` to sync the bot with the Discord command tree, but it's already done on initalization by default, but incase you are unloading/loading it with  jishaku you might need this
+
+### 4. Publishing your package
+To publish your package upload it to github, with the package in the main directory. To then download it to your Tusk instance you need to add it to your [Wimp Source](/docs/wimp)
+
+
 ## Creating Custom Effects
 
 (Written as of V0.0.2, `reply` might exist in the future but this was how it was made)

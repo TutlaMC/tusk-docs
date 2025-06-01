@@ -18,6 +18,7 @@ const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   Sidebar: [
     'home',
+    'install',
     'setup',
     'scripting',
     {
@@ -40,6 +41,7 @@ const sidebars = {
         'reference/effects',
       ],
     },
+    'wimp',
     'modding',
   ],
 

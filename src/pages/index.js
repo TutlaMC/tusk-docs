@@ -17,16 +17,7 @@ function HeroSection() {
         </div>
         <div className={styles.heroRight}>
           <div className={styles.heroVideoWrapper}>
-            <iframe
-              width="440"
-              height="248"
-              src="https://www.youtube.com/embed/uBcNu3ZGpKk"
-              title="Tusk Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className={styles.heroVideo}
-            ></iframe>
+            <img src="banner.png"></img>
           </div>
         </div>
       </div>
